@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'profil2',
+    redirectTo: 'listfriend',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'profil2',
     loadChildren: () => import('./profil2/profil2.module').then( m => m.Profil2PageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'friend',
+    loadChildren: () => import('./friend/friend.module').then( m => m.FriendPageModule)
   },
 ];
 
